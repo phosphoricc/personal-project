@@ -1,0 +1,175 @@
+@charset "utf-8";
+/* CSS Document */
+
+header {
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */ /* Firefox < 16 */ /* Internet Explorer */ /* Opera < 12.1 */
+            animation: fadein 3s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 3; }
+}
+
+/* Firefox < 16 */
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 3; }
+}
+
+/* Internet Explorer */
+
+/* Opera < 12.1 */
+header {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    overflow: hidden;
+}
+header .header-content {
+    text-align: center;
+    padding: 150px 0 50px;
+    position: relative;
+}
+header .header-content .header-content-inner {
+    position: relative;
+    margin: 0 auto;
+}
+header .header-content .header-content-inner h1 {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+    header {
+        min-height: 100%;
+    }
+    header .header-content {
+        text-align: left;
+        padding: 0;
+        height: 100vh;
+    }
+    header .header-content .header-content-inner {
+        max-width: none;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+    }
+}
+#skills {
+    background-color: #9DF1E3;
+    color: #fff;
+}
+.grow {
+    transition: all .2s ease-in-out;
+}
+.grow:hover {
+    -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+            transform: scale(1.3);
+}
+@media (min-width: 992px) {
+    h1 {
+        font-weight: 600;
+    }
+}
+section {
+    text-align: center;
+    padding: 60px 0;
+}
+.big {
+    color: #555;
+    font-size: 48px;
+}
+.big_p {
+    color: #555;
+    font-size: 30px;
+}
+.big_p:after {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    -webkit-animation: ellipsis 1.5s infinite;
+            animation: ellipsis 1.5s infinite;
+    content: "\2026"; 
+}
+@-webkit-keyframes ellipsis {
+    from {
+        width: 2px;
+    }
+    to {
+        width: 15px;
+    }
+}
+@keyframes ellipsis {
+    from {
+        width: 2px;
+    }
+    to {
+        width: 15px;
+    }
+}
+.small {
+    color: #ccc;
+    font-size: 18px;
+}
+
+@media (min-width: 992px) {
+    #works {
+        margin-bottom: 0;
+    }
+    .left {
+    text-align: left;
+}
+.small {
+    text-align: left;
+}
+@media (min-width: 992px) {
+    .parallax {
+        /* The image used */
+        
+        background-image: url("img/1.png");
+        /* Set a specific height */
+        
+        min-height: 500px;
+        /* Create the parallax scrolling effect */
+        
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+a {
+    text-decoration: underline;
+    color:#9DF1E3;
+}
+li a {
+    text-decoration: none;
+}
+.layoutSingleColumn {
+    width: 700px;
+    margin: 0 auto;
+}
+@media (max-width: 767px) {
+    .layoutSingleColumn {
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+footer {
+    padding: 60px 0;
+    color: #fff;
+    background-color: #797572;
+    background-image: 
+        linear-gradient(-173deg, rgba(255,255,255,0.20) 0%, #000000 100%),
+        linear-gradient(72deg, rgba(255,255,255,0.25) 25%, rgba(0,0,0,0.25) 100%),
+        radial-gradient(47% 102%, rgba(255,255,255,0.50) 0%, rgba(21,24,32,0.60) 120%);
+    background-blend-mode: multiply;
+}
+
+}
